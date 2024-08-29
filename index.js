@@ -33,7 +33,7 @@ function devinerNombre() {
 }
 
 function redemarrer() {
-    alert("Nombre de tentatives épuisé. Un nouveau nombre mystère a été choisi.");
+    alert(`Nombre de tentatives épuisé. Le nombre mystère était ${nombreMystere} Un nouveau nombre mystère a été choisi.`);
     tentatives = 5;
     document.getElementById("message").innerText = "";
     document.getElementById("tentative").innerText = `Vous avez ${tentatives} tentatives restantes.`;
