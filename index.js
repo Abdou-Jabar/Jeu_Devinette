@@ -16,7 +16,7 @@ function devinerNombre() {
         essai
         if (nombreDevine === nombreMystere) {
             message = `Bravo! Vous avez deviné le nombre.`;
-            tentatives = 0; // Fin du jeu
+            tentatives = 0;
         } else if (nombreDevine < nombreMystere) {
             message = "Trop petit! Essayez un nombre plus grand.";
         } else if (nombreDevine > nombreMystere) {
@@ -37,6 +37,5 @@ function redemarrer() {
     tentatives = 5;
     document.getElementById("message").innerText = "";
     document.getElementById("tentative").innerText = `Vous avez ${tentatives} tentatives restantes.`;
-    // Générer un nouveau nombre mystère
     nombreMystere = Math.floor(Math.random() * 100) + 1;
 }
